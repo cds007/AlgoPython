@@ -14,5 +14,6 @@ if __name__ == '__main__':
     print_hi('PyCharm')
     print("nihao")
     print("nihao2")
+    print("2024.5.31")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
