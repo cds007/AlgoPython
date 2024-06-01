@@ -1,4 +1,4 @@
-# 整数转字符串
+# 整数转字符串 str int float list tuple set bytes dict
 num_int = 5
 num_str = str(num_int)
 print(type(num_str), num_str)
