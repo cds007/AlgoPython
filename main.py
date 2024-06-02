@@ -15,5 +15,7 @@ if __name__ == '__main__':
     print("nihao")
     print("nihao2")
     print("2024.5.31")
+    print("2024.6.1")
+    print("2024.6.2")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
