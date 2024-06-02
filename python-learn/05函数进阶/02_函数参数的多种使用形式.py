@@ -18,7 +18,7 @@ user_info('甜甜', gender='女', age=9)
 # 缺省参数（默认值）
 
 
-def user_info(name, age, gender):
+def user_info(name, age, gender="男"):
     print(f"姓名是:{name}, 年龄是:{age}, 性别是:{gender}")
 
 
@@ -29,6 +29,8 @@ user_info('小天', 13, '男')
 # 不定长定义的形式参数会作为元组存在，接收不定长数量的参数传入
 def user_info(*args):
     print(f"args参数的类型是：{type(args)}，内容是:{args}")
+    print(args[0])
+    print(args[-1])
 
 
 user_info(1, 2, 3, '小明', '男孩')
@@ -38,6 +40,7 @@ user_info(1, 2, 3, '小明', '男孩')
 
 def user_info(**kwargs):
     print(f"args参数的类型是：{type(kwargs)}，内容是:{kwargs}")
+    print(kwargs['name'])
 
 
 user_info(name='小王', age=11, gender='男孩')
