@@ -53,16 +53,9 @@ def merge_sort(nums: list, l: int, r: int) -> None:
         else:
             temp.append(nums[j])
             j += 1
-    while i <= mid:
-        temp.append(nums[i])
-        i += 1
-    while j <= r:
-        temp.append(nums[j])
-        j += 1
-    k = 0
-    for i in range(l, r+1):
-        nums[i] = temp[k]
-        k += 1
+    temp += nums[i:mid+1]
+    temp += nums[j:r+1]
+    nums[l:r+1] = temp
 
 
 if __name__ == '__main__':
